@@ -1,8 +1,11 @@
 flask grade evaluator
 │
-├── app.py                            
+├── app.py 
+|
+|
 ├── requirements.txt                
 ├── templates/
 │   ├──student.html        
-│   ├── index.html       
+│  ├── index.html 
+|
 └── env/                 
