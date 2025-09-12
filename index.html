@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body{
+            background-image: url("backimage.jpg");
+        }
+        div{
+            text-align: center;
+            background-color: cyan;
+            width:200px;
+            margin-left: 600px;
+            border:double;
+        }
+        #a:hover {
+    color: #ffffff !important;
+    background: #3b62f1;
+    border-color: #367def !important;
+    transition: all 0.4s ease 0s;
+        }
+</style>
+</head>
+<body>
+    <div>
+<form action="{{ url_for('submit_marks') }}" method="POST">
+  <label for="name">Student Name:</label><br>
+  <input type="text" name="name" id="name" required><br><br>
+
+  <label for="rollNum">Roll Number:</label><br>
+  <input type="number" name="rollNum" id="rollNum" required><br><br>
+
+  <label for="marks">Marks:</label><br>
+  <input type="number" name="marks" id="marks" required><br><br>
+
+  <input type="submit"  id="a" value="Check your Grade here">
+</form>
+</div>
+
+</body>
+</html>
